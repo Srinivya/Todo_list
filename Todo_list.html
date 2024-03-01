@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo_list</title>
+    <link rel="stylesheet" href="Todo_list.css" class="css">
+
+</head>
+
+<body>
+    <div class="Booksky">
+        <h2>Booksky</h2>
+    </div>
+    <div class="box">
+        <div class="inside">
+            <h2>The Republic</h2>
+            <h4>Plato</h4>
+            <p>The Republic observes justice in man and politics and discusses the role of the philosopher in society. Many of the intellectual concepts contained in The Republic are still discussed today, but the text is also an important historical document that provides historians with a snapshot of Greece at the time of its writing.
+            </p>
+            <button onclick="delete_box(event)">Delete</button>
+        </div>
+    </div>
+    <div class="plus" id="plus_button">
+        <button>+</button>
+    </div>
+    <div class="popup_overlay"></div>
+    <div class="popup_box">
+        <h2>Add book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book_title">
+            <input type="text" placeholder="Book Author" id="book_author">
+            <textarea placeholder="Short description" id="book_description"></textarea>
+            <button id="add_popup">ADD</button>
+            <button id="cancel_popup">CANCEL</button>
+        </form>
+    </div>
+    <script src="Todo_list.js"></script>
+
+</body>
+
+</html>
